@@ -305,6 +305,8 @@
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="|0.76830,0.76830,0.76830,1.00000|">
+   </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="47" dstpinname="Input 1">
    </LINK>
@@ -343,5 +345,15 @@
    <LINK srcnodeid="48" srcpinname="Up Edge" dstnodeid="36" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="47" srcpinname="Output" dstnodeid="25" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="51">
+   <BOUNDS type="Box" left="6720" top="7035" width="645" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6720" top="7035" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="51" srcpinname="Color Output" dstnodeid="47" dstpinname="Input 2">
    </LINK>
    </PATCH>

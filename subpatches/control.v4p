@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\Dropbox\P# Shilouette Particles\subpatches\control.v4p" systemname="control" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\control.v4p" scrollx="0" scrolly="5340">
+   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\control.v4p" systemname="control" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\control.v4p" scrollx="950" scrolly="0">
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1350" top="5550" width="100" height="100">
    </BOUNDS>
@@ -874,20 +874,12 @@
    </NODE>
    <LINK srcnodeid="23" srcpinname="HEART_fxInnerExtrude" dstnodeid="43" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="98">
-   <BOUNDS type="Node" left="5490" top="885" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="network_ctrl">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="99">
    <BOUNDS type="Node" left="5475" top="1395" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Down Edge" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Up Edge" visible="1">
    </PIN>
@@ -904,8 +896,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="98" srcpinname="Input Value" dstnodeid="99" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="99" srcpinname="Up Edge" dstnodeid="100" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Down Edge" dstnodeid="100" dstpinname="Reset">

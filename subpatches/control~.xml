@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
-   <PATCH nodename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\control.v4p" systemname="control" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\control.v4p" scrollx="0" scrolly="5340">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\control.v4p" systemname="control" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\control.v4p" scrollx="0" scrolly="5340">
    <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1350" top="5550" width="100" height="100">
    </BOUNDS>
@@ -176,9 +176,9 @@
    </LINK>
    <LINK srcnodeid="6" srcpinname="Shift" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
-   <BOUNDS type="Window" left="12540" top="360" width="15465" height="12585">
+   <BOUNDS type="Window" left="3500" top="490" width="15460" height="11060">
    </BOUNDS>
-   <PACK Name="dx11" Version="1.0.5">
+   <PACK Name="dx11" Version="1.3.1">
    </PACK>
    <PACK Name="zeroMQ" Version="0.5.7">
    </PACK>
@@ -523,9 +523,9 @@
    </PIN>
    <PIN pinname="HEART_fxInnerExtrude" visible="1">
    </PIN>
-   <PIN pinname="Play" slicecount="1" values="1" visible="1">
+   <PIN pinname="Play" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="Set Time" visible="1">
+   <PIN pinname="Set Time" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="22">
