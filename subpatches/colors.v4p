@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\colors.v4p" systemname="colors" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\colors.v4p" scrollx="1560" scrolly="580">
+   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\colors.v4p" systemname="colors" filename="C:\Users\Achim\Documents\GIT\mars_katharina\subpatches\colors.v4p" scrollx="1670" scrolly="2010">
    <NODE systemname="Random (Value)" nodename="Random (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="5730" top="2940" width="100" height="100">
    </BOUNDS>
@@ -238,50 +238,6 @@
    </LINK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
    </PACK>
-   <NODE id="46" systemname="LE (Value)" nodename="LE (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="3855" top="7005" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" pintype="Input" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input Count" pintype="Configuration" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" pintype="Output" visible="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <NODE id="45" systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <PIN pinname="Input Value" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Receive String" slicecount="1" pintype="Input" visible="1" values="timeliner_REC_showCount">
-   </PIN>
-   <BOUNDS type="Node" left="3570" top="6525" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Display Channel" pintype="Configuration" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="Input Value" dstnodeid="46" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="31" srcpinname="Color Output" dstnodeid="7" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Color Output" dstnodeid="16" dstpinname="Input">
@@ -293,14 +249,12 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Switch" visible="1">
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Input 2" slicecount="1" visible="1" values="|0.76830,0.76830,0.76830,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="47" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="47" dstpinname="Switch">
    </LINK>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="7530" top="3900" width="100" height="100">

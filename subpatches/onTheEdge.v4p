@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
-   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\onTheEdge.v4p" systemname="onTheEdge" filename="C:\GIT\EdgeParticles\subpatches\onTheEdge.v4p" scrollx="60" scrolly="1630">
+   <PATCH nodename="C:\GIT\EdgeParticles\subpatches\onTheEdge.v4p" systemname="onTheEdge" filename="C:\GIT\EdgeParticles\subpatches\onTheEdge.v4p" scrollx="0" scrolly="1140">
    <NODE nodename="SceneFile (DX11.Geometry Assimp)" componentmode="Hidden" id="0" systemname="SceneFile (DX11.Geometry Assimp)" filename="%VVVV%\packs\dx11\nodes\plugins\assimp\VVVV.DX11.Nodes.Assimp.dll">
    <BOUNDS type="Node" left="1885" top="4465" width="3660" height="270">
    </BOUNDS>
@@ -228,12 +228,12 @@
    <PIN pinname="Brightness" slicecount="1" values="10.17">
    </PIN>
    </NODE>
-   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="19">
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="19" stayontop="1">
    <BOUNDS type="Node" left="1390" top="9490" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="1390" top="9490" width="4000" height="3000">
    </BOUNDS>
-   <BOUNDS type="Window" left="220" top="6320" width="4220" height="3560">
+   <BOUNDS type="Window" left="170" top="940" width="4220" height="3560">
    </BOUNDS>
    <PIN pinname="Texture In" visible="1">
    </PIN>
@@ -313,6 +313,8 @@
    </PIN>
    <PIN pinname="Buffers" visible="1">
    </PIN>
+   <PIN pinname="Texture SizeXY" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="13" dstpinname="Layers">
    </LINK>
@@ -333,5 +335,47 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="16" dstpinname="Rotate XYZ">
+   </LINK>
+   <NODE id="23" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="6080" top="7540" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" pintype="Input" visible="1" values="ctrl_depthTexRes">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Display Channel" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input Value" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="(ROUTER DON&apos;T USE)" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="6850" top="6480" width="800" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6850" top="6480" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="1280,720">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Texture SizeXY">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Input Value">
    </LINK>
    </PATCH>
